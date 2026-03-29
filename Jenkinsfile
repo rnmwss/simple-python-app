@@ -58,7 +58,7 @@ pipeline {
                         git config user.email "jenkins@ci.com"
                         git config user.name "Jenkins CI"
                         git tag -a "$PROD_VERSION" -m "Release $PROD_VERSION"
-                        git push "https://$GIT_USER:$GIT_PASS@github.com/ВАШ_ЛОГИН_GITHUB/simple-python-app.git" "$PROD_VERSION"
+                        git push "https://$GIT_USER:$GIT_PASS@github.com/rnmwss/simple-python-app.git" "$PROD_VERSION"
                     '''
                 }
             }
