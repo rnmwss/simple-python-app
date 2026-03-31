@@ -68,14 +68,14 @@ pipeline {
     post {
         success {
             emailext(
-                to: 'rnmmwws@mail.ru',
+                to: 'romanginko25072006@gmail.com',
                 subject: "✅ УСПЕХ: Pipeline ${env.JOB_NAME} [${env.BUILD_NUMBER}]",
                 body: "<p>Сборка #${env.BUILD_NUMBER} успешно развернута в <b>${params.ENVIRONMENT}</b>.</p>"
             )
         }
         failure {
             emailext(
-                to: 'rnmwws@mail.ru',
+                to: 'romanginko25072006@gmail.com',
                 subject: "❌ ОШИБКА: Pipeline ${env.JOB_NAME} [${env.BUILD_NUMBER}]",
                 body: "<p>Сборка #${env.BUILD_NUMBER} упала. Проверьте консоль: ${env.BUILD_URL}</p>"
             )
